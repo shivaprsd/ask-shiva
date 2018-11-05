@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "921466071601",
+    "firebase_url": "https://askshiva-25070.firebaseio.com",
+    "project_id": "askshiva-25070",
+    "storage_bucket": "askshiva-25070.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921466071601:android:b94fd6f17c3b3021",
+        "android_client_info": {
+          "package_name": "org.shiva.askshiva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921466071601-gh4kecp7pg0lcd974pf951b7nr144kta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.shiva.askshiva",
+            "certificate_hash": "01cf635f0a5a4e3dd11f1819d4ad23113c0bd2c5"
+          }
+        },
+        {
+          "client_id": "921466071601-43fci2bul6rdev3f6angs1je4al9rrsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOidKNpzjWv6xHhvjEBfqZHXMz0vdD5Nw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921466071601-43fci2bul6rdev3f6angs1je4al9rrsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

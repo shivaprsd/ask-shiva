@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Ask Shiva</string>
+    <string name="print_label">Print</string>
+    <string name="hello_text">Hello</string>
+    <string name="enter_name_placeholder">type your name here</string>
+    <string name="greetings_text">
+        Shiva here. Ask me any Physics question from any entrance question paper, and I will try to give you the answer.
+        \n\nAll questions are public, and can be viewed by anyone who has this app.
+        \n\nTurn on Data/WiFi to get latest updates. When not in use, keep the app in background to receive  notifications.
+        \n\nReady?
+    </string>
+    <string name="start_label">Get Started</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Asked</string>
+    <string name="tab_text_2">Answered</string>
+    <string name="tab_text_3">Old</string>
+    <string name="jambottle_res">JAM Bottle</string>
+    <string name="about_app">About app</string>
+    <string name="action_get_qp">Question papers</string>
+    <string name="action_ask">Ask</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ask_qstn">Ask a new question</string>
+    <string name="error_regex_unmatch">Enter only letters and digits</string>
+    <string name="main_about">
+        <b>Ask Shiva</b>
+        \n\nMade with &#9829;️ by Shiva Prasad.
+        \nIf you need any help, send an email to shivaprsdv@gmail.com.
+        \n\nAll the best! &#9786;
+    </string>
+    <string name="ask_qstn_desc">Specify the exam, year and question number in the field below:</string>
+    <string name="ask_qstn_eg">e.g. JAM 2018 A23; or Pondi 2017 21; etc</string>
+    <string name="ask_qstn_footer">
+        Check if someone else has already asked the same question before submitting.
+    </string>
+    <string name="notif_channel_name">org.shiva.askshiva.notification</string>
+    <string name="notif_channel_desc">New answer notifications for Ask Shiva</string>
+    <string name="new_answer">New answer</string>
+    <string name="view_answer">View answer</string>
+    <string name="upvote_label">I too have this question</string>
+    <string name="delete_label">Delete question</string>
+</resources>

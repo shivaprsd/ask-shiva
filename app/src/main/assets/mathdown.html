@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MathDown</title>
+    <link rel="stylesheet" href="github-markdown.css">
+    <style>
+    @media screen {
+      html, body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      .wrapper {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0.6rem 0;
+        overflow: hidden;
+      }
+
+      .cover {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+      }
+      #preview {
+        padding: 0 0.6rem;
+        overflow: auto;
+      }
+      #toggle-theme {
+        position: absolute;
+        top: 0.4rem;
+        right: 0.4rem;
+        height: 2rem;
+        width: 2rem;
+        font-size: 150%;
+        border: none;
+        padding: 0;
+        background-color: #f3f3f3;
+        cursor: pointer;
+      }
+      #toggle-theme:focus {
+        outline: none;
+      }
+      .night-mode {
+        background-color: #212121;
+        color: #e0e0e0;
+      }
+      code, table { color: #000000 !important; }
+      .container { overflow: hidden; }
+    }
+    @media print {
+      #toggle-theme { display: none; }
+      .preview { color: #000000; }
+    }
+    </style>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        messageStyle: "simple",
+        showProcessingMessages: false,
+        showMathMenu: false,
+        tex2jax: { inlineMath: [['%', '%']] },
+        asciimath2jax: { delimiters: [['$','$']] },
+      });
+    </script>
+    <script type="text/javascript" async
+            src="MathJax/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/javascript" async
+            src="markdown-it.min.js">
+    </script>
+  </head>
+  <body class="markdown-body">
+    <main role="main" class="container">
+      <div class="preview wrapper">
+        <div id="preview" class="cover">
+        </div>
+      </div>
+    </main>
+    <button id="toggle-theme">&#9775;</button>
+
+    <script>
+      var preview, converter, toggleTheme;
+
+      function updatePreview(text) {
+        MathJax.Hub.Queue(function() {
+          preview.innerHTML = converter.render(text);
+        });
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "preview"]);
+      }
+      window.onload = function() {
+        preview = document.getElementById("preview");
+        converter = markdownit().set({ html: true });
+        toggleTheme = document.getElementById("toggle-theme");
+
+        toggleTheme.onclick = function() {
+          document.body.classList.toggle("night-mode");
+        }
+      }
+    </script>
+  </body>
+</html>

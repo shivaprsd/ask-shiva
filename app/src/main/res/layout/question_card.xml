@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Property Image"
+        app:srcCompat="@drawable/ic_question_mark_24dp" />
+
+    <LinearLayout
+        android:id="@+id/question_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/status_icon"
+        android:layout_toStartOf="@+id/upvote_icon"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/question_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Question Info" />
+        <TextView
+            android:id="@+id/question_text"
+            style="@style/bodyTextDark"
+            android:paddingTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Question Text" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/upvote_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/upvotes"
+        app:srcCompat="@drawable/ic_thumb_up_24dp" />
+
+    <TextView
+        android:id="@+id/upvotes"
+        style="@style/bodyTextDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="2dp"
+        android:text="0" />
+</RelativeLayout>
